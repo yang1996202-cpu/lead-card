@@ -287,7 +287,7 @@ query: "{公司名} 新闻 动态 {行业名} 趋势 融资"
 ## 前置条件与相关 Skill
 
 - 本 Skill 是**原子子 Skill，可独立调用**：`/lead-card 公司名`。
-- 被母 Skill [client-research](../client-research/SKILL.md) 编排时，**必须按统一 schema 输出**（含「我们能提供什么」「切入时机」），否则母流程 Step 1 检查点不通过。
+- 被母 Skill [client-research](https://github.com/yang1996202-cpu/client-research) 编排时，**必须按统一 schema 输出**（含「我们能提供什么」「切入时机」），否则母流程 Step 1 检查点不通过。
 - 依赖单向：本 Skill 不依赖 client-research，可单独跑；禁止反向引用母 Skill。
 
 ## 统一 schema（与 wechat-local-parse 共用）
